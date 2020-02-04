@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-<title>javascript Web Game</title>
-<style>
-    h1{color:#666; }
-    .list-wrap{list-style: none; margin:0; padding:0;}
-    .list-wrap li{border:1px solid #999; border-radius: 3px; height:24px; line-height: 24px; margin:5px 0; padding:10px;}
-    .list-wrap li a{text-decoration: none; color:#666; font-weight: 900;}
-    .list-wrap li:hover{background: #999;}
-    .list-wrap li:hover a{color: #fff;}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>javascript Web Game</title>
+    <style>iframe{border:0; height: 300px;}</style>
 </head>
 
 <body>    
+<div class="col-xl-12">
     <h1>javascript<br/> Web Game</h1>
-    <ul class="list-wrap">
-        <li><a href="./week1/guguda.html"  target="_blank">구구단</a></li>
-        <li><a href="./week3/lotto.html" target="_blank">로또추첨기</a></li>
-        <li><a href="./week3/rock_sissor_paper.html" target="_blank">가위바위보</a></li>
-        <li><a href="./week5/reaction_time_test.html" target="_blank">반응속도 테스트</a></li>
-    </ul>
-</body>
+    <div class="list-wrap">
+        <button class="btn btn-light" data-toggle="collapse" href="#gugudan" role="button" aria-expanded="false" aria-controls="collapseExample">구구단</button>
+        <button class="btn btn-light" data-toggle="collapse" href="#lotto" role="button" aria-expanded="false" aria-controls="collapseExample">로또추첨기</button>
+        <button class="btn btn-light" data-toggle="collapse" href="#rock_sissor_paper" role="button" aria-expanded="false" aria-controls="collapseExample">가위바위보</button>
+        <button class="btn btn-light" data-toggle="collapse" href="#reaction_time_test" role="button" aria-expanded="false" aria-controls="collapseExample">반응속도 테스트</button>
+    </div>
+    
+    <div class="collapse" id="gugudan">
+        <div class="card card-body">
+            <iframe src="./week1/guguda.html"  target="_blank" border="0"></iframe>
+        </div>
+    </div>
+    <div class="collapse" id="lotto">
+        <div class="card card-body">
+            <iframe src="./week3/lotto.html"  target="_blank" border="0"></iframe>
+        </div>
+    </div>
+    <div class="collapse" id="rock_sissor_paper">
+        <div class="card card-body">
+            <iframe src="./week3/rock_sissor_paper.html"  target="_blank" border="0"></iframe>
+        </div>
+    </div>
+    <div class="collapse" id="reaction_time_test">
+        <div class="card card-body">
+            <iframe src="./week5/reaction_time_test.html"  target="_blank" border="0"></iframe>
+        </div>
+    </div>
+</div>
 
+</body>
 </html>
