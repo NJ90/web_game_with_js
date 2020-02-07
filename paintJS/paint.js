@@ -77,7 +77,7 @@ if (canvas){
 
 
 //브러쉬 컬러
-console.log(Array.from(colorSpot)); //Array.from = method which makes array from object
+console.log(Array.from(colorSpot)); //Array.from(object) = method which makes array from object
 Array.from(colorSpot).forEach(colorSpot => colorSpot.addEventListener('click', getColor));
 
 function getColor(event){  
