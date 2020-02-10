@@ -11,7 +11,7 @@ var 폼 = document.createElement('form');
 document.body.append(폼);
 var 입력창 = document.createElement('input');
 폼.append(입력창);
-입력창.type = 'number' //input type = "number"와 같은 의미
+입력창.type = 'number'; //input type = "number"와 같은 의미
 var 버튼 = document.createElement('button');
 버튼.textContent = '입력';
 폼.append(버튼);
