@@ -8,40 +8,76 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>javascript Web Game</title>
-    <style>iframe{border:0; height: 300px;}</style>
+    <style>
+    iframe{border:0; width:100%;}
+    #collapseOne iframe{height: 1000px;}
+    #collapseThree iframe{height: 200px;}
+    button, button:hover{text-decoration: none;}
+    </style>
 </head>
 
 <body>    
-<div class="col-xl-12">
-    <h3>javascript<br/> Web Game</h3>
-    <div class="list-wrap">
-        <p>
-        <button class="btn btn-light rounded-pill" type="button" data-toggle="collapse" data-target="#gugudan" aria-expanded="false" aria-controls="gugudan">구구단</button>
-        <button class="btn btn-light rounded-pill" type="button" data-toggle="collapse" data-target="#lotto" aria-expanded="false" aria-controls="lotto">로또추첨기</button>
-        <button class="btn btn-light rounded-pill" type="button" data-toggle="collapse" data-target="#rock_sissor_paper" aria-expanded="false" aria-controls="rock_sissor_paper">가위바위보</button>
-        <button class="btn btn-light rounded-pill" type="button" data-toggle="collapse" data-target="#reaction_time_test" aria-expanded="false" aria-controls="reaction_time_test">반응속도 테스트</button>
-    </p>
-    
-    <div class="collapse" id="gugudan">
-        <div class="card card-body">
-            <iframe src="./week1/guguda.html"  target="_blank"></iframe>
+  <div class="col-md-12">
+<h3>javascript<br/> Web Game</h3>
+<div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+            그림판
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <iframe src="./paintJS/index.html"  target="_blank"></iframe>
         </div>
+      </div>
     </div>
-    <div class="collapse" id="lotto">
-        <div class="card card-body">
-            <iframe src="./week3/lotto.html"  target="_blank"></iframe>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            구구단
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <iframe src="./week1/guguda.html"  target="_blank"></iframe>
         </div>
+      </div>
     </div>
-    <div class="collapse" id="rock_sissor_paper">
-        <div class="card card-body">
-            <iframe src="./week3/rock_sissor_paper.html"  target="_blank"></iframe>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            로또추첨기
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          <iframe src="./week3/lotto.html"  target="_blank"></iframe>
         </div>
+      </div>
     </div>
-    <div class="collapse" id="reaction_time_test">
-        <div class="card card-body">
-            <iframe src="./week5/reaction_time_test.html"  target="_blank"></iframe>
+    <!-- <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+            가위바위보
+          </button>
+        </h2>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          <iframe src="./week3/rock_sissor_paper.html"  target="_blank"></iframe>
         </div>
-    </div>
+      </div>
+    </div> -->
+  </div>
 </div>
 
 </body>
