@@ -21,8 +21,8 @@
     var strokWidth = document.getElementById('jsRange');
  
 
-    canvas.width = 700; //canvas의 real width & height 꼭 필요함
-    canvas.height = 700;
+    canvas.width = 300; //canvas의 real width & height 꼭 필요함
+    canvas.height = 300;
 
     ctx.strokeStyle = "#2c2c2c"; //strok의 색
     ctx.lineWidth = 2.5;//stroke의 두깨
